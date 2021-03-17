@@ -32,7 +32,7 @@ Your answer: The data is observational as the description states that is based o
 nrow( Whickham)
 ```
 
-Your answer;  Var:3 , obs:1314.Represent by outcome , smoker and age
+Your answer;There 1,314 observations.As we know every row is an observation
 
 3.  
 
