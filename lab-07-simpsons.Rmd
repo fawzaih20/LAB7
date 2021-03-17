@@ -22,10 +22,10 @@ library(mosaicData)
 
 1.  
 ```{r whickam}
-
+Whickham
 ```
     
-Your answer:
+Your answer: The data is observational as the description states that is based on age, smoking, and mortality, which are all observable events and not produced via experiments
 
 2.  
 ```{r observations}
