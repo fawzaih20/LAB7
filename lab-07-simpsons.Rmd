@@ -72,11 +72,11 @@ ggplot(Whickham, aes(x = smoker)) +
 
 
 4. 
+NA: I expect that the more and continuing to smoke will destroy health and increase diseases and make the health condition worse .
 
 ```{r plot_smokeVSincome_1}
-
+ggplot(data=Whickham, aes(x=smoker, y=outcome, color=outcome)) + geom_bar(stat="identity")
 ```
-
 Knit, commit, and push to github.
 
 5. 
