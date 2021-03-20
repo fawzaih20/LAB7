@@ -22,7 +22,7 @@ library(mosaicData)
 
 1.  
 ```{r whickam}
-Whickham
+?Whickham
 ```
     
 Your answer: The data is observational as the description states that is based on age, smoking, and mortality, which are all observable events and not produced via experiments
@@ -101,7 +101,12 @@ Whickham <- Whickham %>% mutate(age_cat = case_when(age <= 44 ~ "18-14" , age > 
 7. 
 
 ```{r plot_smokeVSincome_3}
-
+ggplot(data=Whickham, aes(x=outcome, y=smoker,color=smoker, fill=age_cat)) + geom_bar(stat="identity") +facet_wrap(~age_cat)
 ```
+AN: People aged between (14-18): The number of people who live smoker is higher than the number of people who non-smoker, The number of people who died and smoked is higher than the number of non-smokers .
+
+People aged between (45-64): The number of people who live smoker is higher than the number of people who non-smoker,The number of people who died and smoked is higher than the number of non-smokers .
+
+People over 65 years of age: People who live and non- smoke are higher than people who smoke, people who died and non-smokers more than smokers.
 
 Knit, commit, and push to github.
