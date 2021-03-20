@@ -82,9 +82,15 @@ Knit, commit, and push to github.
 5. 
 
 ```{r plot_smokeVSincome_2}
+
 Whickham %>%
   count(smoker, outcome)
+
 ```
+Somker (732) No -----> 31,4"Dead" > (68,6)Alive
+Somker (582) yes-----> 23,8"Dead" > (76.2)Alive
+
+I does'nt expected this result because now most died people not smoker
 
 6.
 
