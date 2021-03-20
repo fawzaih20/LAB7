@@ -32,33 +32,42 @@ Your answer: The data is observational as the description states that is based o
 nrow( Whickham)
 ```
 
-Your answer;There 1,314 observations.As we know every row is an observation
+Your answer;There 1,314 observations.As we know every row is an observation ,age ,smoker,outcome.
 
 3.  
 
 ```{r number_variables}
-
+names(Whickham)
 ```
 
-Your answer:  
+Your answer:There are 3 variables , "outcome" , "smoker" , and "age"  
 
 ```{r var_type}
-
+unique(Whickham$outcome)
+unique(Whickham$smoker)
+unique(Whickham$age)
 ```
 
-Your answer: 
+Your answer: Using the unique() function on the 3 variables we could see that "outcome" only takes Alive or Dead  value , which makes it categorical non-ordinal. "smoker"only takes yes or No , which also makes it categorical non-ordinal.Age is numerical continous data. 
+
+One of the best ways to visualise categorical data is through the use of bar charts.
+
 
 ```{r plot_outcome}
+ggplot(Whickham, aes(x = outcome)) +
 
+ geom_bar()
 ```
 
 
 ```{r plot_smoker}
-
+ggplot(Whickham, aes(x = smoker)) +
+ geom_bar()
 ```
 
 ```{r plot_age}
-
+ ggplot(Whickham, aes(x = age)) +
+ geom_bar()
 ```
 
 
